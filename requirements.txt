@@ -1,0 +1,12 @@
+pandas
+numpy
+scipy
+gensim
+nltk
+beautifulsoup4
+lxml
+requests
+tqdm
+krippendorff
+pyreadstat
+anthropic

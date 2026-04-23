@@ -1,0 +1,38 @@
+# EARS Dictionary v1 - FROZEN BASELINE
+# Do not modify. Every v2 analysis is reported alongside v1.
+# Source: Tannenbaum, Fox & Uelkuemen (2017) and prior EARS work.
+# 30 unigrams (16 epistemic + 14 aleatory).
+
+EPISTEMIC
+assess
+compelling
+convincing
+credibility
+credible
+expect
+imagine
+know
+presume
+rethink
+skepticism
+suggests
+supposed
+sure
+suspicion
+model
+
+ALEATORY
+baserate
+blackswan
+chance
+decay
+distribution
+fluctuation
+likelihood
+likely
+noise
+odds
+probability
+standarddeviation
+variance
+volatility
