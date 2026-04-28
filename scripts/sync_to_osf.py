@@ -13,6 +13,7 @@ import json
 import os
 import subprocess
 import sys
+import urllib.parse
 from pathlib import Path
 
 OSF_TOKEN = os.environ.get("OSF_TOKEN", "")
@@ -60,7 +61,7 @@ def osf_create_folder(parent_osf_path: str, name: str, token: str) -> str | None
     parent_osf_path is like '/abc123/' or '' for root.
     Returns the new folder's OSF path (e.g. '/def456/'), or None on failure.
     """
-    url = f"{FILES_API}{parent_osf_path}?kind=folder&name={name}"
+    url = f"{FILES_API}{parent_osf_path}?kind=folder&name={urllib.parse.quote(name, safe='')}"
     _, body = curl(
         "-X", "PUT",
         "-H", f"Authorization: Bearer {token}",
@@ -80,7 +81,7 @@ def osf_upload_file(osf_folder_path: str, name: str, local_path: Path, token: st
     Upload a file into an OSF folder. osf_folder_path is like '/abc123/' or '/'.
     On 409 (file exists), parses the update URL from the response and retries.
     """
-    url = f"{FILES_API}{osf_folder_path}?kind=file&name={name}"
+    url = f"{FILES_API}{osf_folder_path}?kind=file&name={urllib.parse.quote(name, safe='')}"
     _, body = curl(
         "-X", "PUT",
         "-H", f"Authorization: Bearer {token}",
