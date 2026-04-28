@@ -1,0 +1,50 @@
+=== Build start: 2026-04-28 13:57:15 ===
+Survey: SV_ahjVK84570ekXFY
+Datacenter: co1
+
+[1] Adding consent question to default block...
+  OK consent question (QID: QID1)
+
+[2] Creating Instructions block...
+  OK block BL_00L3F3xCEzdUT4i
+  OK instructions text
+
+[3] Creating Ratings block...
+  OK block BL_1TB0DZFdHZ4OLTU
+
+[4] Adding 297 word questions to Ratings block...
+  ... 25/297 added
+  ... 50/297 added
+  ... 75/297 added
+  ... 100/297 added
+  ... 125/297 added
+  ... 150/297 added
+  ... 175/297 added
+  ... 200/297 added
+  ... 225/297 added
+  ... 250/297 added
+  ... 275/297 added
+  Total: 297 ok, 0 failed
+
+[5] Setting Ratings block to randomize question order...
+  WARN: could not set randomization: 400 {'meta': {'requestId': '49dd2d6f-6bcd-4fa0-a74e-4ee7b5bfcb65', 'httpStatus': '400 - Bad Request', 'error': {'errorCode': 'QMST_1', 'errorMessage': 'The request was invalid.', 'code': 'ESDEF10', 'validationErrors': [{'Element': 'Blocks', 'Context': '(root)', 'Description': 'Must validate one and only one schema (oneOf)', 'Field': '(root)', 'Value': {'ID': 'BL_1TB0DZFdHZ4OLTU', 'Options': {'BlockLocking': 'false', 'BlockVisibility': 'Collapsed', 'Randomization': {'Advanced': None, 'TotalRandSubset': ''}, 'RandomizeQuestions': 'RandomWithXPrime'}, 'Type': 'Standard'}}, {'Element': 'Blocks', 'Context': '(root)', 'Description': 'Description is required', 'Field': 'Description', 'Value': {'ID': 'BL_1TB0DZFdHZ4OLTU', 'Options': {'BlockLocking': 'false', 'BlockVisibility': 'Collapsed', 'Randomization': {'Advanced': None, 'TotalRandSubset': ''}, 'RandomizeQuestions': 'RandomWithXPrime'}, 'Type': 'Standard'}}, {'Element': 'Blocks', 'Context': '(root).Options.Randomization', 'Description': 'Must validate one and only one schema (oneOf)', 'Field': 'Options.Randomization', 'Value': {'Advanced': None, 'TotalRandSubset': ''}}, {'Element': 'Blocks', 'Context': '(root).Options.Randomization.Advanced', 'Description': 'Invalid type. Expected: object, given: null', 'Field': 'Options.Randomization.Advanced', 'Value': None}, {'Element': 'Blocks', 'Context': '(root).Options.Randomization.TotalRandSubset', 'Description': 'Invalid type. Expected: number, given: string', 'Field': 'Options.Randomization.TotalRandSubset', 'Value': ''}, {'Element': 'Blocks', 'Context': '(root).Options.RandomizeQuestions', 'Description': 'Must validate one and only one schema (oneOf)', 'Field': 'Options.RandomizeQuestions', 'Value': 'RandomWithXPrime'}, {'Element': 'Blocks', 'Context': '(root).Options.RandomizeQuestions', 'Description': 'Options.RandomizeQuestions must be one of the following: "", "False"', 'Field': 'Options.RandomizeQuestions', 'Value': 'RandomWithXPrime'}, {'Element': 'Blocks', 'Context': '(root).Type', 'Description': 'Type must be one of the following: "Trash"', 'Field': 'Type', 'Value': 'Standard'}, {'Element': 'Blocks', 'Context': '(root).Options.Randomization', 'Description': 'Must validate one and only one schema (oneOf)', 'Field': 'Options.Randomization', 'Value': {'Advanced': None, 'TotalRandSubset': ''}}, {'Element': 'Blocks', 'Context': '(root).Options.Randomization.Advanced', 'Description': 'Invalid type. Expected: object, given: null', 'Field': 'Options.Randomization.Advanced', 'Value': None}, {'Element': 'Blocks', 'Context': '(root).Options.Randomization.TotalRandSubset', 'Description': 'Invalid type. Expected: number, given: string', 'Field': 'Options.Randomization.TotalRandSubset', 'Value': ''}, {'Element': 'Blocks', 'Context': '(root).Options.RandomizeQuestions', 'Description': 'Must validate one and only one schema (oneOf)', 'Field': 'Options.RandomizeQuestions', 'Value': 'RandomWithXPrime'}, {'Element': 'Blocks', 'Context': '(root).Options.RandomizeQuestions', 'Description': 'Options.RandomizeQuestions must be one of the following: "", "False"', 'Field': 'Options.RandomizeQuestions', 'Value': 'RandomWithXPrime'}], 'message': 'Data validation failure'}}}
+
+[6] Creating Demographics block...
+  OK block BL_bKqkX7326vF3SvA
+  ERROR adding demographic q (age): 400 {'meta': {'requestId': '32fd6408-f214-4392-8550-804e753134ac', 'httpStatus': '400 - Bad Request', 'error': {'errorCode': 'QMST_1', 'errorMessage': 'The request was invalid.', 'code': 'ESDEF10', 'validationErrors': [{'Element': 'Question.TE', 'Context': '(root)', 'Description': 'Must validate "else" as "if" was not valid', 'Field': '(root)', 'Value': {'Configuration': {'QuestionDescriptionOption': 'UseText'}, 'DataExportTag': 'age', 'Language': [], 'QuestionDescription': 'Age', 'QuestionText': 'What is your age?', 'QuestionType': 'TE', 'Selector': 'SL', 'Validation': {'Settings': {'ForceResponse': 'OFF', 'Type': 'ValidNumber', 'ValidNumber': {'Max': '120', 'Min': '18'}}}}}, {'Element': 'Question.TE', 'Context': '(root).Validation', 'Description': 'Must validate one and only one schema (oneOf)', 'Field': 'Validation', 'Value': {'Settings': {'ForceResponse': 'OFF', 'Type': 'ValidNumber', 'ValidNumber': {'Max': '120', 'Min': '18'}}}}, {'Element': 'Question.TE', 'Context': '(root).Validation.Settings', 'Description': 'Must validate one and only one schema (oneOf)', 'Field': 'Validation.Settings', 'Value': {'ForceResponse': 'OFF', 'Type': 'ValidNumber', 'ValidNumber': {'Max': '120', 'Min': '18'}}}, {'Element': 'Question.TE', 'Context': '(root).Validation.Settings.Type', 'Description': 'Must validate one and only one schema (oneOf)', 'Field': 'Validation.Settings.Type', 'Value': 'ValidNumber'}, {'Element': 'Question.TE', 'Context': '(root).Validation.Settings.Type', 'Description': 'Validation.Settings.Type must be one of the following: "CharRange", "ChoiceRange", "ChoicesTotal", "Consecutive", "ConsecutiveNumberRange", "ContentType", "CustomValidation", "ForceResponse", "GroupChoiceRange", "MinChar", "MinChoices", "None", "TotalChar", "AITextAnalysis", "Calendar", ""', 'Field': 'Validation.Settings.Type', 'Value': 'ValidNumber'}, {'Element': 'Question.TE', 'Context': '(root)', 'Description': 'Must validate all the schemas (allOf)', 'Field': '(root)', 'Value': {'Configuration': {'QuestionDescriptionOption': 'UseText'}, 'DataExportTag': 'age', 'Language': [], 'QuestionDescription': 'Age', 'QuestionText': 'What is your age?', 'QuestionType': 'TE', 'Selector': 'SL', 'Validation': {'Settings': {'ForceResponse': 'OFF', 'Type': 'ValidNumber', 'ValidNumber': {'Max': '120', 'Min': '18'}}}}}], 'message': 'Data validation failure'}}}
+  OK demographic: gender
+  OK demographic: education
+  OK demographic: native_english
+  OK demographic: unknown_words
+  OK demographic: comments
+
+[7] Fetching final survey state...
+  OK final: 5 blocks, 304 questions
+
+[8] Writing metadata file...
+  Wrote C:\Users\dwalters1\Dropbox\projects\EARS Dictionary Expansion\outputs\survey\pilot_v1_metadata.json
+
+Preview URL: https://co1.qualtrics.com/jfe/preview/SV_ahjVK84570ekXFY
+Edit URL:    https://co1.qualtrics.com/Q/EditSection/Blocks?ContextSurveyID=SV_ahjVK84570ekXFY
+
+=== Build complete: 2026-04-28 14:01:13 ===

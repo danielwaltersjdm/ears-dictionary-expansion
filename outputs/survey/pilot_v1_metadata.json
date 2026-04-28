@@ -1,0 +1,30 @@
+{
+  "survey_id": "SV_ahjVK84570ekXFY",
+  "datacenter": "co1",
+  "url_preview": "https://co1.qualtrics.com/jfe/preview/SV_ahjVK84570ekXFY",
+  "url_edit": "https://co1.qualtrics.com/Q/EditSection/Blocks?ContextSurveyID=SV_ahjVK84570ekXFY",
+  "blocks": {
+    "consent": "BL_4MXu5K97wFUxZ7o",
+    "instructions": "BL_00L3F3xCEzdUT4i",
+    "ratings": "BL_1TB0DZFdHZ4OLTU",
+    "demographics": "BL_bKqkX7326vF3SvA"
+  },
+  "n_word_questions": 297,
+  "n_word_failures": 0,
+  "build_timestamp": "2026-04-28 14:01:13",
+  "status": "Inactive (preview only)",
+  "demographics_added": [
+    "age",
+    "gender",
+    "education",
+    "native_english",
+    "unknown_words",
+    "comments"
+  ],
+  "manual_steps_required": [
+    "Enable random question order in the Ratings block (Qualtrics web editor -> open Ratings block -> gear icon -> Question Randomization -> 'Randomize the order of all questions'). API does not support setting this in block PUT.",
+    "Move the age question to the top of the Demographics block (currently at bottom because it was added last via the patch script).",
+    "Replace the placeholder consent text with IRB-approved language before activating the survey.",
+    "Set the survey to Active when ready to distribute (currently Inactive)."
+  ]
+}

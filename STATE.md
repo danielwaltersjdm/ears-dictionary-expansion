@@ -32,6 +32,7 @@ Last updated: 2026-04-23
 
 - **Base wordlist:** Loughran-McDonald (2011) "Uncertainty" — 297 words. Frozen, citable, derivation documented in `docs/wordlist_derivation.md`. Filtered file at `outputs/loughran_mcdonald_uncertainty_297.csv`.
 - v2 expansion work paused. May resume if needed; for now LM is the base.
+- **Qualtrics pilot survey built** (`SV_ahjVK84570ekXFY` on `co1.qualtrics.com`). All 297 LM words, dual-scale rating (epistemic + aleatory intensity, 7-point each), within-subject, within Inactive. See `outputs/survey/pilot_v1_metadata.json` for IDs and pending manual steps. Build pipeline at `scripts/qualtrics/`.
 
 ## Next
 
