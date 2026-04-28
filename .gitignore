@@ -10,4 +10,9 @@ Thumbs.db
 raw_data/
 *.dta
 processed_data/kwic_windows/
+processed_data/stripped_corpus.txt.gz
+processed_data/sentences_flat.txt.gz
+processed_data/word2vec.model
+processed_data/word2vec.model.*
+processed_data/LoughranMcDonald_MasterDictionary.csv
 .git-credentials
