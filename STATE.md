@@ -35,7 +35,17 @@ Last updated: 2026-04-23
 
 ## Adopted (2026-04-29)
 
-- **Expansion protocol v2.0** committed (`docs/expansion_protocol.md`). Replaces v1.0. Scope shift: no candidate generation; 297 LM words are the input pool directly. Method = LLM ensemble classification (5 prompt variants × 1,485 contexts) + calibration via v1 EARS overlap + held-out predictive validation. Pre-committed thresholds throughout. Awaiting evaluator review and DW go-ahead before execution.
+- **Expansion protocol v2.0** committed (`docs/expansion_protocol.md`). Replaced v1.0. Independent evaluator review surfaced two fatal flaws: (a) construct-definition leakage into LLM prompts, (b) 8-word "calibration" was mostly memorization. Plus several non-fatal issues.
+- **Expansion protocol v2.1** committed, replacing v2.0. Fixes:
+  - Leakage-free prompt definitions (separate `docs/construct_definitions_prompt.md`)
+  - Human-coded 30-lemma gold set as the reliability anchor (DW + 1 collaborator, blind, before any LLM run)
+  - Lemmatize LM 297 to ~200 lemmas before classification
+  - Stratified KWIC sampling (5 contexts for typical lemmas, 25 for top-decile-frequency polysemous ones)
+  - Non-circular predictive validation: analyst forecast dispersion + revision speed (outcomes not used in v1's construction)
+  - Model version pinning + cached raw API responses
+  - Per-category Cohen's kappa + confusion matrix alongside Krippendorff's alpha
+  - LLM ensemble alpha demoted to "prompt-stability" descriptor; reliability gate is kappa-vs-human-gold-set
+- **Pending DW action before execution:** identify the gold-set collaborator and code the 30-lemma gold set with DW. After that, the LLM run is unblocked.
 
 ## Next
 
