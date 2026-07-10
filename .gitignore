@@ -15,4 +15,8 @@ processed_data/sentences_flat.txt.gz
 processed_data/word2vec.model
 processed_data/word2vec.model.*
 processed_data/LoughranMcDonald_MasterDictionary.csv
+processed_data/corpus_units.parquet
+processed_data/llm_raw_responses/
 .git-credentials
+sessions/
+*transcript*
